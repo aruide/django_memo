@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tailwind',
+    'theme',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -66,7 +69,22 @@ TEMPLATES = [
             ],
         },
     },
+    {
+        'BACKEND': 'django.template.backends.jinja2.Jinja2',
+        'DIRS': [BASE_DIR / 'templates'],  # Crée ce dossier si besoin
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'environment': 'djangotutorial.jinja2.environment',
+        },
+    },
 ]
+
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = [
+    "127.0.0.1"
+]
+
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 WSGI_APPLICATION = 'djangotutorial.wsgi.application'
 

@@ -3,4 +3,4 @@ from core.decorators import routes
 from . import views
 
 app_name = "produit"
-urlpatterns = [path(url.lstrip('/'), view) for url, view in routes]
+urlpatterns = [path(url.lstrip('/'), view, name=name) for url, view, name in routes]
