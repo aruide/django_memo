@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+
+# Environnement virtuel
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+*.env
+
+# Django-specific
+*.log
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/  # collectstatic output
+local_settings.py
+
+# Migrations (optionnel — à garder si tu veux un contrôle strict)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.pyd
+*/migrations/*.py
+# Tu peux ignorer les fichiers de migration initiaux si tu veux :
+# */migrations/*.py
+
+# IDEs et outils de développement
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.cache
